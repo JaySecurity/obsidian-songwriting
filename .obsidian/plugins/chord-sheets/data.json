@@ -1,0 +1,13 @@
+{
+  "showChordOverview": "always",
+  "showChordDiagramsOnHover": "always",
+  "showTransposeControl": true,
+  "showInstrumentControl": true,
+  "debug": false,
+  "defaultInstrument": "guitar",
+  "diagramWidth": 100,
+  "autoscrollDefaultSpeed": 10,
+  "showAutoscrollButton": "always",
+  "blockLanguageSpecifier": "chords",
+  "alwaysSaveAutoscrollSpeedToFrontmatter": false
+}

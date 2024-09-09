@@ -1,0 +1,221 @@
+{
+  "main": {
+    "id": "3508a224c6d20881",
+    "type": "split",
+    "children": [
+      {
+        "id": "7b5c6b31fd58d8fc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "798546964200d040",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Dashboard.canvas",
+                "viewState": {
+                  "x": 250,
+                  "y": -959.7611539159986,
+                  "zoom": -0.2560319126438969
+                }
+              },
+              "pinned": true
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "996a3fe3d9ac5ebb",
+    "type": "split",
+    "children": [
+      {
+        "id": "ea6d61f4a3a395af",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4c8e652ebdda2ccf",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a4cc0f47695b65a9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a3fb4cad646d3a82",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 232.5
+  },
+  "right": {
+    "id": "1f07cded954514c8",
+    "type": "split",
+    "children": [
+      {
+        "id": "b41eca9c6ee74b87",
+        "type": "tabs",
+        "dimension": 65.75471698113208,
+        "children": [
+          {
+            "id": "39b7bb59a286221b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Dashboard.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "86b7244e64110e37",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Dashboard.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d21cf2d9a13caee7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "d7b32888b8d231e6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Dashboard.canvas"
+              }
+            }
+          },
+          {
+            "id": "f200dcb9967b8cf9",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Dashboard.canvas"
+              }
+            }
+          },
+          {
+            "id": "4a3d84b7af0b9fc4",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          }
+        ],
+        "currentTab": 4
+      },
+      {
+        "id": "fc5196a9cb2e1988",
+        "type": "tabs",
+        "dimension": 34.24528301886792,
+        "children": [
+          {
+            "id": "4f4058e2cc0b439f",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 335.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "command-palette:Open command palette": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templater-obsidian:Templater": false,
+      "audio-recorder:Start/stop recording": false
+    }
+  },
+  "active": "798546964200d040",
+  "lastOpenFiles": [
+    "Ideas & Concepts.md",
+    "Dashboard.canvas",
+    "Resources.md",
+    "Untitled",
+    "Daily/2024-09-08.md",
+    "Templates/Daily Note.md",
+    "Song Writing/Test Song.md",
+    "Music/Blake Shelton/Austin.md",
+    "Ideas.md",
+    "Ideas & Concepts 1.md",
+    "Song Writing/Test Song 2.md",
+    "Buttons.md",
+    "Music/Tony Sly/Capo 4th Fret.md",
+    "Music/Tony Sly",
+    "Music/Blake Shelton",
+    "Templates/Song Writing.md",
+    "Song Writing",
+    "Templates/Song.md",
+    "Music",
+    "Media/Recording 20240906124214.webm",
+    "Media/Recording 20240906124136.webm",
+    "Recording 20240906122550.webm",
+    "Recording 20240906122613.webm",
+    "Recording 20240906122601.webm",
+    "Welcome.md"
+  ]
+}

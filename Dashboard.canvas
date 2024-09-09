@@ -1,0 +1,65 @@
+{
+  "nodes": [
+    {
+      "id": "a2de4c55006c3ef6",
+      "type": "group",
+      "styleAttributes": {},
+      "x": -460,
+      "y": -1480,
+      "width": 1420,
+      "height": 1020,
+      "label": "Main"
+    },
+    {
+      "id": "942e07ffd17bd09f",
+      "type": "file",
+      "file": "Ideas & Concepts.md",
+      "styleAttributes": {},
+      "x": -490,
+      "y": 480,
+      "width": 740,
+      "height": 860
+    },
+    {
+      "id": "d2e8c7a30e348463",
+      "type": "text",
+      "text": "# Recent\n```dataview\nLIST\nFROM \"/\"\nSORT file.mtime DESC\nLIMIT 10\n```",
+      "styleAttributes": {},
+      "x": 280,
+      "y": -860,
+      "width": 640,
+      "height": 400
+    },
+    {
+      "id": "c857e3804739a4da",
+      "x": -420,
+      "y": -860,
+      "width": 670,
+      "height": 400,
+      "type": "file",
+      "file": "Resources.md"
+    },
+    {
+      "id": "74cafe2ff1202c0b",
+      "type": "text",
+      "text": "# [[Ideas & Concepts]]\n\n\n### Unused Titles\n\n```dataviewjs \ndv.taskList(\n    dv.page(\"Ideas & Concepts\").file.tasks\n        .where(t => t.section.subpath.includes(\"Titles\") && !t.completed),\n    false\n);\n// console.log(dv.page(\"Ideas\").file.tasks[0])\n```\n\n## Unused Lines and Hooks\n\n```dataviewjs \ndv.taskList(\n    dv.page(\"Ideas & Concepts\").file.tasks\n        .where(t => t.section.subpath.includes(\"Hook\") && !t.completed),\n    false\n);\n// console.log(dv.page(\"Ideas\").file.tasks[0])\n```\n",
+      "styleAttributes": {},
+      "x": -420,
+      "y": -1440,
+      "width": 670,
+      "height": 540
+    },
+    {
+      "id": "fb2bd360430e4945",
+      "type": "text",
+      "text": "# Incomplete Songs\n\n\n\n```dataview\nTABLE file.mtime AS \"Modified\"\nFROM \"Song Writing\"\nWHERE !complete\nSORT file.mtime DESC\n\n```",
+      "styleAttributes": {},
+      "x": 280,
+      "y": -1440,
+      "width": 640,
+      "height": 540
+    }
+  ],
+  "edges": [],
+  "metadata": {}
+}

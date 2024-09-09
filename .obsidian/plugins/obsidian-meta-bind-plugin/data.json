@@ -1,0 +1,69 @@
+{
+  "devMode": false,
+  "ignoreCodeBlockRestrictions": false,
+  "preferredDateFormat": "YYYY-MM-DD",
+  "firstWeekday": {
+    "index": 1,
+    "name": "Monday",
+    "shortName": "Mo"
+  },
+  "syncInterval": 200,
+  "minSyncInterval": 50,
+  "maxSyncInterval": 1000,
+  "enableJs": true,
+  "viewFieldDisplayNullAsEmpty": false,
+  "enableSyntaxHighlighting": true,
+  "enableEditorRightClickMenu": true,
+  "inputFieldTemplates": [],
+  "buttonTemplates": [
+    {
+      "label": "Record New Clip",
+      "hidden": true,
+      "class": "",
+      "tooltip": "",
+      "id": "record-start",
+      "style": "primary",
+      "actions": [
+        {
+          "type": "regexpReplaceInNote",
+          "regexp": "`BUTTON\\[record-start\\]`",
+          "replacement": "`BUTTON[record-stop]`\n"
+        },
+        {
+          "type": "inlineJS",
+          "code": "let view = app.workspace.getActiveViewOfType(obsidian.MarkdownView);\nif (view && view instanceof obsidian.MarkdownView) {\n  let initMode = view.currentMode.type;\n  if (view.currentMode.type === 'preview') {\n    view.setMode('source');\n  }\n  const editor = view.sourceMode.cmEditor;\n  const lastLine = editor.lastLine(); \n  editor.setCursor(lastLine + 1); \n  if (view.currentMode.type != initMode) {\n    view.setMode(initMode);\n  }\n  app.workspace.activeLeaf.rebuildView();\n}"
+        },
+        {
+          "type": "command",
+          "command": "audio-recorder:start"
+        }
+      ]
+    },
+    {
+      "label": "Stop Recording",
+      "hidden": true,
+      "class": "",
+      "tooltip": "",
+      "id": "record-stop",
+      "style": "destructive",
+      "actions": [
+        {
+          "type": "regexpReplaceInNote",
+          "regexp": "`BUTTON\\[record-stop\\]`",
+          "replacement": "`BUTTON[record-start]`\n"
+        },
+        {
+          "type": "inlineJS",
+          "code": "let view = app.workspace.getActiveViewOfType(obsidian.MarkdownView);\nif (view && view instanceof obsidian.MarkdownView) {\n  let initMode = view.currentMode.type;\n  if (view.currentMode.type === 'preview') {\n    view.setMode('source');\n  }\n  app.workspace.activeLeaf.rebuildView();\n}"
+        },
+        {
+          "type": "command",
+          "command": "audio-recorder:stop"
+        }
+      ]
+    }
+  ],
+  "excludedFolders": [
+    "templates"
+  ]
+}
